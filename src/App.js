@@ -11,6 +11,7 @@ import Party from "./components/Party";
 import Shadhi from "./components/Shadhi";
 
 function App() {
+  const title = "Text Modify";
   const [mode, setMode] = useState("Dark");
   const [alert, setAlert] = useState(null);
 
@@ -51,7 +52,7 @@ function App() {
       <Router>
         {/* <Navbar /> */}
         {/* <Navbar title="NavBar" AboutText="About us" /> */}
-        <Navbar title="My-Application" mode={mode} toggleMode={toggleMode} />
+        <Navbar title={title} mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <Routes>
           <Route

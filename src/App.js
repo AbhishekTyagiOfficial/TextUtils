@@ -1,24 +1,78 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import "./bootstrap/css/bootstrap.min.css";
+import Navbar from "./components/Navbar";
+import TextForm from "./components/TextForm";
+import About from "./components/About";
+import Alert from "./components/Alert";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Robin from "./components/Robin";
+import Party from "./components/Party";
+import Shadhi from "./components/Shadhi";
 
 function App() {
+  const [mode, setMode] = useState("Dark");
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type,
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 1000);
+  };
+
+  const toggleMode = () => {
+    if (mode === "dark") {
+      setMode("light");
+      document.body.style.backgroundColor = "white";
+      showAlert("Light Mode has been Enabled.", "success");
+
+      document.title = "React app - Light Mode";
+
+      // setInterval(() => {
+      //   document.title = " Light Mode";
+      // }, 2000);
+      //  setInterval(() => {
+      //    document.title = " Dark Mode";
+      //  }, 1500);
+    } else {
+      setMode("dark");
+      document.body.style.backgroundColor = "#47465a";
+      showAlert(" Dark Mode has been Enabled.", "success");
+
+      document.title = "React app - Dark Mode";
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        {/* <Navbar /> */}
+        {/* <Navbar title="NavBar" AboutText="About us" /> */}
+        <Navbar title="My-Application" mode={mode} toggleMode={toggleMode} />
+        <Alert alert={alert} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <TextForm
+                heading="Enter the text to Analyze"
+                mode={mode}
+                showAlert={showAlert}
+              />
+            }
+          />
+          <Route path="/about" element={<About />}>
+            <Route path="robin" element={<Robin />} />
+            <Route path="party" element={<Party />} />
+            <Route path="shadhi" element={<Shadhi />} />
+          </Route>
+          {/* <About /> */}
+        </Routes>
+      </Router>
+    </>
   );
 }
 

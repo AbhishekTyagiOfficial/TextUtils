@@ -34,107 +34,47 @@ export default function About(props) {
     <>
       <div className="container rounded" style={mystyle}>
         <h3 className="my-4">About Us</h3>
-        <div className="accordion" id="accordionExample">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
-              <button
-                className="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-                style={mystyle}
-              >
-                <strong>Accordion Item #1</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body " style={mystyle}>
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classNamees that we use to style each element. These classNamees
-                control the overall appearance, as well as the showing and
-                hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingTwo">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-                style={mystyle}
-              >
-                <strong>Accordion Item #2</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body" style={mystyle}>
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classNamees that we use to style each element. These
-                classNamees control the overall appearance, as well as the
-                showing and hiding via CSS transitions. You can modify any of
-                this with custom CSS or overriding our default variables. It's
-                also worth noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingThree">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-                style={mystyle}
-              >
-                <strong>Accordion Item #3</strong>
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body" style={mystyle}>
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classNamees that we use to style each element. These
-                classNamees control the overall appearance, as well as the
-                showing and hiding via CSS transitions. You can modify any of
-                this with custom CSS or overriding our default variables. It's
-                also worth noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>
+          {" "}
+          At TextUtils, we believe that words have the power to shape ideas,
+          inspire change, and connect people. Our mission is to provide you with
+          a comprehensive suite of text manipulation tools that empower you to
+          unleash your creativity, enhance your productivity, and simplify your
+          work. Whether you're a student, writer, researcher, or professional in
+          any field, our user-friendly platform offers a wide range of
+          text-related functionalities that cater to your specific needs. From
+          basic formatting and grammar correction to advanced text analysis and
+          language translation, TextUtils is here to simplify and streamline
+          your text-related tasks. Key Features: Text Formatting: Effortlessly
+          transform your text with various formatting options, including
+          capitalization, line spacing, bullet points, and more. Word Count and
+          Character Count: Quickly determine the number of words, characters,
+          and sentences in your text, ideal for meeting strict word limits or
+          evaluating content length. Grammar and Spell Checking: Polish your
+          writing with our advanced grammar and spell checking tool, ensuring
+          error-free and professional-looking content. Text Summarization:
+          Condense lengthy articles, documents, or essays into concise
+          summaries, saving you valuable time and helping you grasp the main
+          points quickly. Language Translation: Break down language barriers by
+          translating text between multiple languages, expanding your global
+          reach and facilitating effective communication. Keyword Extraction:
+          Identify the most important terms and phrases in your text, ideal for
+          SEO optimization, content analysis, and information retrieval. Random
+          Text Generation: Generate random text, lorem ipsum, or placeholder
+          content to fill in design prototypes or test visual layouts. Case
+          Conversion: Convert your text between lowercase, uppercase, title
+          case, and other variations, ensuring consistency and meeting specific
+          formatting requirements. Our platform is designed to be intuitive and
+          easy to use, making it accessible to users of all skill levels.
+          Whether you need a quick text fix or require more advanced text
+          manipulation, TextUtils has you covered. Join our growing community of
+          users who rely on TextUtils to enhance their writing, simplify their
+          tasks, and unleash their full potential. Start exploring our range of
+          tools today and experience the power of words at your fingertips.
+          <br />
+          Happy text manipulation! The TextUtils Team
+        </p>
+
         {/* <button
           onClick={toggleMode}
           type="button"

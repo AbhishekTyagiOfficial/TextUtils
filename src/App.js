@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Robin from "./components/Robin";
 import Party from "./components/Party";
 import Shadhi from "./components/Shadhi";
+import Privacy from "./components/Privacy";
 
 function App() {
   const title = "Text Modify";
@@ -71,6 +72,7 @@ function App() {
             <Route path="party" element={<Party />} />
             <Route path="shadhi" element={<Shadhi />} />
           </Route>
+          <Route path="/privacy" element={<Privacy />}></Route>
           {/* <About /> */}
         </Routes>
       </Router>

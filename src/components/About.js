@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import React from "react";
+// import PropTypes from "prop-types";
+
 import { Link, Outlet } from "react-router-dom";
 
 export default function About(props) {
+  const title = "Text Modify";
   // const [mystyle, setstyle] = useState({
   //   color: "black",
   //   backgroundColor: "white",
@@ -36,7 +38,7 @@ export default function About(props) {
         <h3 className="my-4">About Us</h3>
         <p>
           {" "}
-          At TextUtils, we believe that words have the power to shape ideas,
+          At {title}, we believe that words have the power to shape ideas,
           inspire change, and connect people. Our mission is to provide you with
           a comprehensive suite of text manipulation tools that empower you to
           unleash your creativity, enhance your productivity, and simplify your
@@ -44,8 +46,8 @@ export default function About(props) {
           any field, our user-friendly platform offers a wide range of
           text-related functionalities that cater to your specific needs. From
           basic formatting and grammar correction to advanced text analysis and
-          language translation, TextUtils is here to simplify and streamline
-          your text-related tasks. Key Features: Text Formatting: Effortlessly
+          language translation, {title} is here to simplify and streamline your
+          text-related tasks. Key Features: Text Formatting: Effortlessly
           transform your text with various formatting options, including
           capitalization, line spacing, bullet points, and more. Word Count and
           Character Count: Quickly determine the number of words, characters,
@@ -67,12 +69,13 @@ export default function About(props) {
           formatting requirements. Our platform is designed to be intuitive and
           easy to use, making it accessible to users of all skill levels.
           Whether you need a quick text fix or require more advanced text
-          manipulation, TextUtils has you covered. Join our growing community of
-          users who rely on TextUtils to enhance their writing, simplify their
+          manipulation, {title} has you covered. Join our growing community of
+          users who rely on {title} to enhance their writing, simplify their
           tasks, and unleash their full potential. Start exploring our range of
           tools today and experience the power of words at your fingertips.
           <br />
-          Happy text manipulation! The TextUtils Team
+          Happy text manipulation!
+          <br /> The {title} Team
         </p>
 
         {/* <button

@@ -188,7 +188,9 @@ export default function TextForm(props) {
           Minutes to reads.
         </p>
         <h3>Preview</h3>
-        <p>{text.length > 0 ? text : "Enter some text into the textbox."}</p>
+        <pre>
+          {text.length > 0 ? text : "Enter some text into the textbox."}
+        </pre>
       </div>
     </>
   );

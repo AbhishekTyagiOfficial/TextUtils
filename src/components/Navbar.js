@@ -68,5 +68,5 @@ Navbar.prototype = {
 
 Navbar.defaultProps = {
   title: "title text here",
-  AboutText: "about",
+  AboutText: "About",
 };

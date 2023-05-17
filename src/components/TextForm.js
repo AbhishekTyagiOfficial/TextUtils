@@ -17,6 +17,7 @@ export default function TextForm(props) {
     } else {
       props.showAlert("Text Changed the Upper Case.", "success");
       //console.log("not working");
+      // document.title = "Text Modify - Upper text";
     }
   };
 
@@ -31,6 +32,7 @@ export default function TextForm(props) {
     } else {
       props.showAlert("Text Changed the Lower Case.", "success");
       //console.log("not working");
+      // document.title = "Text Modify - Lower text";
     }
   };
 
@@ -44,6 +46,8 @@ export default function TextForm(props) {
     // } else {
     props.showAlert("Text is Cleared.", "success");
     //   //console.log("not working");
+    // document.title = "Text Modify - Clear Text";
+
     // }
   };
 
@@ -61,6 +65,7 @@ export default function TextForm(props) {
     } else {
       props.showAlert("Text is Copied.", "success");
       //console.log("not working");
+      // document.title = "Text Modify - Copied";
     }
   };
 
@@ -74,6 +79,7 @@ export default function TextForm(props) {
     } else {
       props.showAlert("Remove the Extra Space.", "success");
       //console.log("not working");
+      // document.title = "Text Modify - Remove Space";
     }
   };
 

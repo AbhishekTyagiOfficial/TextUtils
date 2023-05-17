@@ -31,7 +31,7 @@ function App() {
       document.body.style.backgroundColor = "white";
       showAlert("Light Mode has been Enabled.", "success");
 
-      document.title = "React app - Light Mode";
+      document.title = "Text Modify - Light Mode";
 
       // setInterval(() => {
       //   document.title = " Light Mode";
@@ -44,7 +44,7 @@ function App() {
       document.body.style.backgroundColor = "#47465a";
       showAlert(" Dark Mode has been Enabled.", "success");
 
-      document.title = "React app - Dark Mode";
+      document.title = "Text Modify - Dark Mode";
     }
   };
   return (
@@ -56,6 +56,7 @@ function App() {
         <Alert alert={alert} />
         <Routes>
           <Route
+            exact
             path="/"
             element={
               <TextForm
@@ -65,7 +66,7 @@ function App() {
               />
             }
           />
-          <Route path="/about" element={<About />}>
+          <Route exact path="/about" element={<About />}>
             <Route path="robin" element={<Robin />} />
             <Route path="party" element={<Party />} />
             <Route path="shadhi" element={<Shadhi />} />
